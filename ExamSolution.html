@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+.flex-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: #00ffff;
+
+}
+
+.flex-container > div {
+
+  background-color: #f1f1f1;
+
+  width: 100px;
+
+  margin: 10px;
+
+  text-align: center;
+
+  line-height: 75px;
+
+  font-size: 30px;
+
+}
+
+ol.c {
+  list-style-type: upper-roman;
+  
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>The flex-direction Property</h1>
+
+<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+<div class="flex-container">
+
+  <div style="border-style:solid; border-width:1px; height: 90px; width: 95%; display: flex; flex-direction: row;">
+
+  	<div style="border-style:solid; border-width:1px; padding:5px; margin:5px; height:75%; width: 20%; text-align: center;">1a</div>
+
+  	<div style=" border-style:solid; border-width : 2px 3px 2px 3px; margin:10px;  height: 70%; width: 60%; text-align: center; border-style: 	groove;">1b</div>
+
+  	<div style="border-style:solid; border-width:1px; padding:5px; margin:5px; 		height:75%; width: 20%; text-align: center;">1c</div>
+
+  </div>
+ 
+
+
+  <div style="border-style: solid; border-width : 1px 3px 1px 3px; height: 70px; width: 95% ">2
+  </div>
+
+   <div style=" height: 200px; width: 95%; display: flex; flex-direction: row;">
+
+  	<div style="border-style:solid; border-width:1px; padding:5px; margin:5px; 		height:175px; width:95%; text-align: right;">3a</div>
+    
+   <div style = " text-align: left; padding:5px; margin:5px; border-style:solid; border-width : 1px; height:175px; width:95%;">
+   <ul style = "text-aligin: left; line-height : 35px;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+
+</html>
