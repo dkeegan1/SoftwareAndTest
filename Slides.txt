@@ -1,0 +1,110 @@
+﻿mkdir ~/git_training
+cd~/git_training
+
+git clone ssh://---- <name1>
+git clone ssh://---- <name2>
+
+//create a new file called <your_Name>.txt
+>echo "My name is <name"><your_Name>.txt
+
+// List status of untacke files only
+git status -u
+
+//Add the new file to staging area
+git add <your_Name>.txt
+git status
+git commit -m "add first file"
+
+//to move or rename files/folders
+git mv foo.c foobar.called
+ 
+//Delete a fiel
+git rm test.txt
+
+//Delete folder recursively
+git rm -r my_folder1
+git commit -a -m "deleting files"
+
+// List all existine branches
+git branches
+
+// Create and change a new branch1
+git checkou -b branch_<id>1
+
+//Edit an existing file and save them check status
+git status
+
+//Commit the changes on the branch
+git commit -add
+
+// Merge changes ot origin
+git push origin HEAD
+
+//view master branch - new change not visible
+git checkout master
+
+// change to master branch, to view file
+git checkout master
+
+//Merge change form branch1 to master
+git merge branch_<id>1
+git status
+
+//view the branch's history
+gitk
+
+//check origin repo
+git remote show origin
+
+//pull updates from master branch   
+
+git pull -v origin
+ls
+
+
+
+Clone the upstream and work on it. Feed changes to upstream.
+$ git clone git://git.kernel.org/pub/scm/.../torvalds/linux-2.6 my2.6
+$ cd my2.6
+$ git checkout -b mine master <1>
+$ edit/compile/test; git commit -a -s <2>
+$ git format-patch master <3>
+$ git send-email --to="person <email@example.com>" 00*.patch <4>
+$ git checkout master <5>
+$ git pull <6>
+$ git log -p ORIG_HEAD.. arch/i386 include/asm-i386 <7>
+$ git ls-remote --heads http://git.kernel.org/.../jgarzik/libata-dev.git <8>
+$ git pull git://git.kernel.org/pub/.../jgarzik/libata-dev.git ALL <9>
+$ git reset --hard ORIG_HEAD <10>
+$ git gc <11>
+checkout a new branch mine from master.
+
+repeat as needed.
+
+extract patches from your branch, relative to master,
+
+and email them.
+
+return to master, ready to see what’s new
+
+git pull fetches from origin by default and merges into the current branch.
+
+immediately after pulling, look at the changes done upstream since last time we checked, only in the area we are interested in.
+
+check the branch names in an external repository (if not known).
+
+fetch from a specific branch ALL from a specific repository and merge it.
+
+revert the pull.
+
+garbage collect leftover objects from reverted pull.
+
+
+
+
+
+
+
+
+
+
